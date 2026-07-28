@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>COWORKLY | Coming Soon</title>
+
+<meta name="description" content="COWORKLY - Premium Coworking Space in Rourkela. Work. Connect. Grow. Launching Soon.">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+
+background:#ffffff;
+overflow:hidden;
+
+}
+
+.container{
+
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+
+padding:40px;
+
+position:relative;
+
+}
+
+.circle1{
+
+position:absolute;
+width:650px;
+height:650px;
+border:2px solid #F58220;
+border-radius:50%;
+opacity:.08;
+
+}
+
+.circle2{
+
+position:absolute;
+width:520px;
+height:520px;
+border:1px solid #F58220;
+border-radius:50%;
+opacity:.10;
+
+}
+
+.content{
+
+position:relative;
+text-align:center;
+max-width:900px;
+z-index:5;
+
+}
+
+.logo{
+
+font-size:72px;
+font-weight:800;
+letter-spacing:2px;
+
+}
+
+.black{
+
+color:#111111;
+
+}
+
+.orange{
+
+color:#F58220;
+
+}
+
+.tagline{
+
+margin-top:15px;
+
+font-size:22px;
+
+letter-spacing:6px;
+
+color:#666;
+
+text-transform:uppercase;
+
+}
+
+h2{
+
+margin-top:45px;
+
+font-size:52px;
+
+font-weight:800;
+
+color:#111;
+
+}
+
+.desc{
+
+margin:25px auto;
+
+max-width:760px;
+
+font-size:18px;
+
+line-height:1.8;
+
+color:#555;
+
+}
+
+.highlight{
+
+color:#F58220;
+
+font-weight:600;
+
+}
+
+.timer{
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+margin-top:40px;
+
+}
+
+.box{
+
+width:120px;
+
+height:120px;
+
+background:#111;
+
+border-radius:18px;
+
+color:white;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+.number{
+
+font-size:42px;
+
+font-weight:700;
+
+}
+
+.label{
+
+font-size:14px;
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
+color:#ccc;
+
+}
+
+.button{
+
+display:inline-block;
+
+margin-top:50px;
+
+padding:18px 40px;
+
+background:#F58220;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:50px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.button:hover{
+
+background:#111;
+
+}
+
+.footer{
+
+margin-top:40px;
+
+font-size:15px;
+
+color:#666;
+
+}
+
+.footer span{
+
+color:#F58220;
+
+font-weight:600;
+
+}
+
+.social{
+
+margin-top:25px;
+
+}
+
+.social a{
+
+text-decoration:none;
+
+margin:0 12px;
+
+color:#111;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.social a:hover{
+
+color:#F58220;
+
+}
+
+@media(max-width:768px){
+
+.logo{
+
+font-size:48px;
+
+}
+
+h2{
+
+font-size:34px;
+
+}
+
+.timer{
+
+flex-wrap:wrap;
+
+}
+
+.box{
+
+width:90px;
+
+height:90px;
+
+}
+
+.number{
+
+font-size:30px;
+
+}
+
+.tagline{
+
+font-size:15px;
+
+letter-spacing:3px;
+
+}
+
+.desc{
+
+font-size:16px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="circle1"></div>
+
+<div class="circle2"></div>
+
+<div class="content">
+
+<div class="logo">
+<span class="black">COWO</span><span class="orange">RKLY</span>
+</div>
+
+<div class="tagline">
+WORK • CONNECT • GROW
+</div>
+
+<h2>We're Launching Soon</h2>
+
+<p class="desc">
+
+A <span class="highlight">Premium Coworking Space in Rourkela</span> designed for
+entrepreneurs, freelancers, startups, students and remote professionals.
+
+Experience dedicated desks, private cabins, meeting rooms,
+high-speed Wi-Fi, tea & coffee, power backup and an inspiring community.
+
+</p>
+
+<div class="timer">
+
+<div class="box">
+<div id="days" class="number">00</div>
+<div class="label">Days</div>
+</div>
+
+<div class="box">
+<div id="hours" class="number">00</div>
+<div class="label">Hours</div>
+</div>
+
+<div class="box">
+<div id="minutes" class="number">00</div>
+<div class="label">Minutes</div>
+</div>
+
+<div class="box">
+<div id="seconds" class="number">00</div>
+<div class="label">Seconds</div>
+</div>
+
+</div>
+
+<a href="mailto:info@coworkly.co.in" class="button">
+Get Notified
+</a>
+
+<div class="social">
+
+<a href="#">Instagram</a>
+
+<a href="#">Facebook</a>
+
+<a href="#">LinkedIn</a>
+
+</div>
+
+<div class="footer">
+
+📍 Near Rourkela Railway Station, Odisha
+
+<br><br>
+
+© 2026 <span>COWORKLY</span> | Where Ideas Begin.
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+const launchDate = new Date("August 15, 2026 09:00:00").getTime();
+
+setInterval(function(){
+
+const now = new Date().getTime();
+
+const distance = launchDate - now;
+
+const days=Math.floor(distance/(1000*60*60*24));
+
+const hours=Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+
+const minutes=Math.floor((distance%(1000*60*60))/(1000*60));
+
+const seconds=Math.floor((distance%(1000*60))/1000);
+
+document.getElementById("days").innerHTML=days;
+document.getElementById("hours").innerHTML=hours;
+document.getElementById("minutes").innerHTML=minutes;
+document.getElementById("seconds").innerHTML=seconds;
+
+},1000);
+
+</script>
+
+</body>
+</html>
