@@ -3,6 +3,32 @@ export function initMotion() {
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (!fine || reduce) return;
 
+  let n = 0;
+  const wrapWords = (node) => {
+    if (node.nodeType === 3) {
+      const parts = node.textContent.split(/(\s+)/);
+      if (parts.length === 1 && !parts[0].trim()) return;
+      const frag = document.createDocumentFragment();
+      parts.forEach((part) => {
+        if (!part.trim()) {
+          frag.append(part);
+          return;
+        }
+        const span = document.createElement("span");
+        span.className = n++ % 2 ? "title-part title-part--down" : "title-part title-part--up";
+        span.textContent = part;
+        frag.append(span);
+      });
+      node.replaceWith(frag);
+      return;
+    }
+    if (node.nodeType === 1) [...node.childNodes].forEach(wrapWords);
+  };
+  document.querySelectorAll("h1, h2, h3").forEach((heading) => {
+    heading.classList.add("title-hover");
+    wrapWords(heading);
+  });
+
   document.body.classList.add("has-cursor");
   const cursor = document.createElement("div");
   cursor.className = "cursor";

@@ -13,13 +13,18 @@ export function initReels() {
       </button>`;
     }
     return `<button class="reel" type="button" data-src="${item.src}" data-name="${item.name}">
-      <video muted playsinline preload="metadata" poster="${item.poster}" src="${item.src}"></video>
+      <video muted autoplay loop playsinline preload="auto" src="${item.src}"></video>
       <span class="play" aria-hidden="true">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="#fff"><path d="M4 2.5v11l10-5.5-10-5.5z"/></svg>
       </span>
       <div class="shade"><strong>${item.name}</strong><span>${item.role}</span></div>
     </button>`;
   }).join("");
+
+  mount.querySelectorAll("video").forEach((video) => {
+    video.muted = true;
+    video.play().catch(() => {});
+  });
 
   const modal = document.querySelector("[data-modal]");
   const player = modal.querySelector("video");

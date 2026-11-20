@@ -72,6 +72,14 @@
   border: 1px solid var(--hair);
   background: var(--ground-deep);
 }
+.map-frame--wide {
+  width: 100%;
+  margin-top: 48px;
+  border-radius: 0;
+  border-left: 0;
+  border-right: 0;
+  min-height: 560px;
+}
 .map-frame iframe {
   position: absolute;
   inset: 0;
