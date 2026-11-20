@@ -18,6 +18,39 @@
   <meta name="twitter:description" content="Rourkela’s first coworking office. 21 seats, private cabins, meeting rooms, Airtel Fibre Wi-Fi, and a cafe. 1st Floor, New Station Road.">
   <meta name="twitter:image" content="https://www.coworkly.space/assets/brand/og-cover.jpg">
   <link rel="canonical" href="https://www.coworkly.space/">
+  <link rel="preload" as="image" href="assets/hero/hero-entrance.jpg" fetchpriority="high">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CoworkingSpace",
+    "name": "Coworkly",
+    "url": "https://www.coworkly.space/",
+    "image": "https://www.coworkly.space/assets/brand/og-cover.jpg",
+    "description": "Rourkela’s first coworking office. 21 workstations, 3 private cabins, 2 meeting rooms, high-speed Wi-Fi and a pantry.",
+    "slogan": "Work. Connect. Grow.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1st Floor, New Station Road, Amar Bhawan Lane",
+      "addressLocality": "Rourkela",
+      "addressRegion": "Odisha",
+      "addressCountry": "IN"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 22.227, "longitude": 84.864 },
+    "hasMap": "https://maps.app.goo.gl/jrW2t7eTADRbxAUbA",
+    "telephone": "+919861325389",
+    "sameAs": [
+      "https://www.instagram.com/coworkly.space/",
+      "https://www.facebook.com/coworkly.space/",
+      "https://www.linkedin.com/company/coworkly.space/"
+    ],
+    "priceRange": "₹300–₹6000",
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "High-speed Wi-Fi", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Meeting rooms", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Air conditioning", "value": true }
+    ]
+  }
+  </script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -42,7 +75,7 @@
   <main id="main">
     <section class="hero" aria-label="Coworkly">
       <div class="hero__media">
-        <img src="assets/hero/hero-entrance.jpg" alt="Glowing Coworkly entrance in Rourkela">
+        <img fetchpriority="high" decoding="async" src="assets/hero/hero-entrance.jpg" alt="Glowing Coworkly entrance in Rourkela">
       </div>
       <div class="hero__scrim"></div>
       <aside class="ghost" aria-hidden="true">
@@ -87,12 +120,12 @@
         <h2>Named spaces with a job to do.</h2>
         <p class="lede">Glass, murals, and desks that already know your name.</p>
         <div class="space-grid">
-          <a class="card" href="spaces.html"><img src="assets/spaces/udaan.jpg" alt="Udaan open workspace"><div class="meta"><h3>UDAAN</h3><p>Where Ideas Begin</p></div></a>
-          <a class="card" href="spaces.html"><img src="assets/spaces/lakshya.jpg" alt="Lakshya cabin" style="object-position:center 30%"><div class="meta"><h3>LAKSHYA</h3><p>Where Focus Creates Impact</p></div></a>
-          <a class="card" href="spaces.html"><img src="assets/spaces/manthan.jpg" alt="Manthan meeting room"><div class="meta"><h3>MANTHAN</h3><p>Where Ideas Evolve</p></div></a>
-          <a class="card" href="spaces.html"><img src="assets/spaces/charcha.jpg" alt="Charcha meeting room"><div class="meta"><h3>CHARCHA</h3><p>Where Ideas Are Discussed</p></div></a>
-          <a class="card" href="spaces.html"><img src="assets/spaces/drishthi.jpg" alt="Drishthi cabin"><div class="meta"><h3>DRISHTHI</h3><p>Think outside the box</p></div></a>
-          <a class="card" href="spaces.html"><img src="assets/spaces/samvad.jpg" alt="Samvad meeting room door"><div class="meta"><h3>SAMVAD</h3><p>Where conversations create clarity</p></div></a>
+          <a class="card" href="spaces.html"><img loading="lazy" decoding="async" src="assets/spaces/udaan.jpg" alt="Udaan open workspace"><div class="meta"><h3>UDAAN</h3><p>Where Ideas Begin</p></div></a>
+          <a class="card" href="spaces.html"><img loading="lazy" decoding="async" src="assets/spaces/lakshya.jpg" alt="Lakshya cabin" style="object-position:center 30%"><div class="meta"><h3>LAKSHYA</h3><p>Where Focus Creates Impact</p></div></a>
+          <a class="card" href="spaces.html"><img loading="lazy" decoding="async" src="assets/spaces/manthan.jpg" alt="Manthan meeting room"><div class="meta"><h3>MANTHAN</h3><p>Where Ideas Evolve</p></div></a>
+          <a class="card" href="spaces.html"><img loading="lazy" decoding="async" src="assets/spaces/charcha.jpg" alt="Charcha meeting room"><div class="meta"><h3>CHARCHA</h3><p>Where Ideas Are Discussed</p></div></a>
+          <a class="card" href="spaces.html"><img loading="lazy" decoding="async" src="assets/spaces/drishthi.jpg" alt="Drishthi cabin"><div class="meta"><h3>DRISHTHI</h3><p>Think outside the box</p></div></a>
+          <a class="card" href="spaces.html"><img loading="lazy" decoding="async" src="assets/spaces/samvad.jpg" alt="Samvad meeting room door"><div class="meta"><h3>SAMVAD</h3><p>Where conversations create clarity</p></div></a>
         </div>
       </div>
     </section>
@@ -135,7 +168,7 @@
         </div>
         <div class="split" style="margin-top:36px">
           <div class="story-panel" style="min-height:420px;background:#f6efe4">
-            <img src="assets/illustrations/cafe.jpg" alt="Mural at Coworkly: Ideate, Innovate, Plan, Think, Create">
+            <img loading="lazy" decoding="async" src="assets/illustrations/cafe.jpg" alt="Mural at Coworkly: Ideate, Innovate, Plan, Think, Create">
           </div>
           <div>
             <p class="kicker">Walk the floor</p>
@@ -158,7 +191,7 @@
           <p style="margin-top:20px"><a class="btn btn--flame" href="visit.html">Book a Tour <span class="btn__arrow"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span></a></p>
         </div>
         <div class="story-panel">
-          <img src="assets/hero/hero-window.jpg" alt="Open seating with glass front">
+          <img loading="lazy" decoding="async" src="assets/hero/hero-window.jpg" alt="Open seating with glass front">
           <p class="cap">Good ideas grow here.</p>
         </div>
       </div>
