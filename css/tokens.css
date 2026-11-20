@@ -1,0 +1,21 @@
+:root {
+  --ground: #2a0b02;
+  --ground-deep: #120400;
+  --ink: #ffffff;
+  --ink-soft: rgba(255, 255, 255, 0.72);
+  --ink-faint: rgba(255, 255, 255, 0.46);
+  --flame: #ff3d00;
+  --flame-mid: #ff6600;
+  --flame-lit: #ff8a1f;
+  --glass: rgba(56, 20, 6, 0.42);
+  --glass-strong: rgba(40, 13, 3, 0.62);
+  --hair: rgba(255, 255, 255, 0.14);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --gutter: clamp(18px, 2.6vw, 44px);
+  --font-display: "Inter Tight", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-italic: "Instrument Serif", Georgia, serif;
+  --radius-pill: 999px;
+  --nav-h: 76px;
+  --max: 1240px;
+}

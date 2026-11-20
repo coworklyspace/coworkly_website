@@ -1,0 +1,57 @@
+import { testimonials } from "./testimonials.js";
+
+export function initReels() {
+  const mount = document.querySelector("[data-reels]");
+  if (!mount) return;
+
+  mount.innerHTML = testimonials.map((item) => {
+    if (!item.src) {
+      return `<button class="reel" type="button" disabled>
+        <img src="${item.poster}" alt="">
+        <div class="soon"><span>Reel coming soon</span></div>
+        <div class="shade"><strong>${item.name}</strong><span>${item.role}</span></div>
+      </button>`;
+    }
+    return `<button class="reel" type="button" data-src="${item.src}" data-name="${item.name}">
+      <video muted playsinline preload="metadata" poster="${item.poster}" src="${item.src}"></video>
+      <span class="play" aria-hidden="true">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="#fff"><path d="M4 2.5v11l10-5.5-10-5.5z"/></svg>
+      </span>
+      <div class="shade"><strong>${item.name}</strong><span>${item.role}</span></div>
+    </button>`;
+  }).join("");
+
+  const modal = document.querySelector("[data-modal]");
+  const player = modal.querySelector("video");
+  const title = modal.querySelector("[data-modal-title]");
+  const closeBtn = modal.querySelector("[data-close]");
+  let lastFocus = null;
+
+  const close = () => {
+    modal.classList.remove("is-open");
+    modal.setAttribute("aria-hidden", "true");
+    player.pause();
+    player.removeAttribute("src");
+    lastFocus?.focus();
+  };
+
+  mount.addEventListener("click", (event) => {
+    const card = event.target.closest("[data-src]");
+    if (!card) return;
+    lastFocus = card;
+    title.textContent = card.dataset.name;
+    player.src = card.dataset.src;
+    modal.classList.add("is-open");
+    modal.setAttribute("aria-hidden", "false");
+    player.play();
+    closeBtn.focus();
+  });
+
+  closeBtn.addEventListener("click", close);
+  modal.addEventListener("click", (event) => {
+    if (event.target === modal) close();
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && modal.classList.contains("is-open")) close();
+  });
+}
