@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.coworkly.space/</loc></url>
-  <url><loc>https://www.coworkly.space/spaces</loc></url>
-  <url><loc>https://www.coworkly.space/amenities</loc></url>
-  <url><loc>https://www.coworkly.space/community</loc></url>
-  <url><loc>https://www.coworkly.space/visit</loc></url>
-  <url><loc>https://www.coworkly.space/terms</loc></url>
+  <url><loc>https://www.coworkly.space/spaces.html</loc></url>
+  <url><loc>https://www.coworkly.space/amenities.html</loc></url>
+  <url><loc>https://www.coworkly.space/community.html</loc></url>
+  <url><loc>https://www.coworkly.space/visit.html</loc></url>
+  <url><loc>https://www.coworkly.space/terms.html</loc></url>
 </urlset>

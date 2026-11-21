@@ -4,16 +4,16 @@ export const testimonials = [
     id: "priyanka",
     name: "Priyanka",
     role: "Member · Coworkly",
-    src: "/assets/reels/priyanka-testimonial.mp4",
-    poster: "/assets/reels/member-poster.jpg",
+    src: "assets/reels/priyanka-testimonial.mp4",
+    poster: "assets/reels/member-poster.jpg",
     quote: "Heard in the hall"
   },
   {
     id: "shekher",
     name: "Shekher",
     role: "Member · Coworkly",
-    src: "/assets/reels/shekher-testimonial.mp4",
-    poster: "/assets/spaces/udaan.jpg",
+    src: "assets/reels/shekher-testimonial.mp4",
+    poster: "assets/spaces/udaan.jpg",
     quote: "A place to ship ideas"
   },
   {
@@ -21,7 +21,7 @@ export const testimonials = [
     name: "Member reel",
     role: "Reel coming soon",
     src: "",
-    poster: "/assets/spaces/open-desks.jpg",
+    poster: "assets/spaces/open-desks.jpg",
     quote: ""
   },
   {
@@ -29,7 +29,7 @@ export const testimonials = [
     name: "Member reel",
     role: "Reel coming soon",
     src: "",
-    poster: "/assets/spaces/lakshya.jpg",
+    poster: "assets/spaces/lakshya.jpg",
     quote: ""
   }
 ];
